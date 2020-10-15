@@ -159,6 +159,7 @@ namespace Assignment5
         {
             try
             {
+                submit_button.Visibility = Visibility.Visible;
                 operator_label.Content = game.GetGameType();
                 equality_label.Content = "=";
                 answer_box.Visibility = Visibility.Visible;
@@ -170,6 +171,45 @@ namespace Assignment5
                 string methodName = MethodInfo.GetCurrentMethod().Name;
 
                 throw new Exception("Class: " + className + "\nMethod Name: " + methodName);
+            }
+        }
+
+        /// <summary>
+        /// Executed when the quit button is pressed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void QuitButtonPressed(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
+            }
+        }
+
+        /// <summary>
+        /// Executed when the submit button is pressed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SubmitButtonPressed(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                if (answer_box.Text.Length != 0)
+                {
+                    game.CheckAnswer();
+                    answer_box.Text = "";
+                    answer_box.Focus();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.ToString());
             }
         }
     }

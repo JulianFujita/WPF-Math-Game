@@ -17,14 +17,24 @@
             </Button.Background>
         </Button>
         <Label x:Name="countdown_label" Content="" HorizontalAlignment="Center" Margin="0,91,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.093,1.853" FontSize="64" FontFamily="Cooper Black"/>
-        <Label x:Name="first_number_label" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,134,0,0" FontFamily="Cooper Black" FontSize="64"/>
-        <Label x:Name="second_number_label" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="224,134,0,0" FontFamily="Cooper Black" FontSize="64"/>
-        <Label x:Name="operator_label" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="303,134,0,0" FontFamily="Cooper Black" FontSize="64"/>
+        <Label x:Name="second_number_label" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,134,0,0" FontFamily="Cooper Black" FontSize="64"/>
+        <Label x:Name="first_number_label" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="163,134,0,0" FontFamily="Cooper Black" FontSize="64"/>
+        <Label x:Name="operator_label" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="269,138,0,0" FontFamily="Cooper Black" FontSize="64"/>
         <Label x:Name="equality_label" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="458,134,0,0" FontFamily="Cooper Black" FontSize="64"/>
         <TextBox x:Name="answer_box" HorizontalAlignment="Left" Margin="536,142,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" FontSize="64" FontFamily="Cooper Black" TextAlignment="Center" MaxLength="2" PreviewKeyDown="AnswerBoxChanged" Visibility="Hidden"/>
         <Label x:Name="timer_label" Content="Time: 0 seconds" HorizontalAlignment="Center" Margin="0,364,0,0" VerticalAlignment="Top" FontSize="32" FontFamily="Cooper Black"/>
         <Label Content="Press ENTER to submit your answer" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top"/>
         <Label x:Name="feedback_label" Content="" HorizontalAlignment="Center" Margin="0,239,0,0" VerticalAlignment="Top" FontSize="32" FontFamily="Cooper Black"/>
+        <Button x:Name="quit_button" Content="Quit" HorizontalAlignment="Left" Margin="11,351,0,0" VerticalAlignment="Top" FontSize="32" Click="QuitButtonPressed">
+            <Button.Background>
+                <ImageBrush ImageSource="/sponge_not_cheese.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="submit_button" Content="Submit" HorizontalAlignment="Left" Margin="662,156,0,0" VerticalAlignment="Top" FontSize="32" Click="SubmitButtonPressed" Visibility="Hidden">
+            <Button.Background>
+                <ImageBrush ImageSource="/sponge_not_cheese.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>

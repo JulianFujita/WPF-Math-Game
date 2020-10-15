@@ -99,8 +99,18 @@ namespace Assignment5
                 }
                 else
                 {
-                    age_label.Content = "";
-                    validAge = true;
+                    int age = Int32.Parse(age_input.Text.ToString());
+
+                    if (age >= 3 && age <= 10)
+                    {
+                        age_label.Content = "";
+                        validAge = true;
+                    }
+                    else
+                    {
+                        age_label.Content = "Sorry, but you have to be 3-10 years old";
+                    }
+                    
                 }
 
                 // Game is ready to be started

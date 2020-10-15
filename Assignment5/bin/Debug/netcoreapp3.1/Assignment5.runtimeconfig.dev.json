@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\lifti\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\lifti\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="general_wallpaper.jpg" />
+    <None Remove="road_wallpaper.jpg" />
+    <None Remove="score_wallpaper.jpg" />
+    <None Remove="sponge_not_cheese.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="general_wallpaper.jpg" />
+    <Resource Include="road_wallpaper.jpg" />
+    <Resource Include="score_wallpaper.jpg" />
+    <Resource Include="sponge_not_cheese.jpg" />
+  </ItemGroup>
+
+</Project>

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Media;
 using System.Reflection;
 using System.Text;
 using System.Windows;
@@ -72,6 +73,10 @@ namespace Assignment5
         {
             try
             {
+                // Play sound
+                SoundPlayer simpleSound = new SoundPlayer("game-start.wav");
+                simpleSound.Play();
+
                 // Hide button
                 ready_button.Visibility = Visibility.Hidden;
 

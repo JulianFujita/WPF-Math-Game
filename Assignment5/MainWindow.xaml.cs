@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Media;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -127,6 +128,11 @@ namespace Assignment5
                         gameType = "DIV";
 
                     StartChosenGame(gameType);
+                }
+                else
+                {
+                    SoundPlayer simpleSound = new SoundPlayer("try_again.wav");
+                    simpleSound.Play();
                 }
                     
             }

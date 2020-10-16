@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Media;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -34,6 +35,17 @@ namespace Assignment5
 
             MyDataRow row = new MyDataRow(game.GetName(), game.GetAge(), game.CorrectAnswers, game.IncorrectAnswers, game.GetSeconds());
             rows.Add(row);
+
+            if (game.CorrectAnswers < 6)
+            {
+                SoundPlayer simpleSound = new SoundPlayer("wa-wa-wa.wav");
+                simpleSound.Play();
+            }
+            else
+            {
+                SoundPlayer simpleSound = new SoundPlayer("victoryscreech.wav");
+                simpleSound.Play();
+            }
 
             data_grid.ItemsSource = rows;
         }

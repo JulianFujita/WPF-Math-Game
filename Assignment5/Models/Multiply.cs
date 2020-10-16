@@ -28,14 +28,12 @@ namespace Assignment5.Models
 
             if (a * b == c)
             {
-                this.CorrectAnswers++;
-                this.GetFeedbackLabel().Content = "Correct!";
+                this.PlayCorrectSound();
                 GenerateQuestion();
             }
             else
             {
-                this.IncorrectAnswers++;
-                this.GetFeedbackLabel().Content = "Incorrect!";
+                this.PlayIncorrectSound();
                 GenerateQuestion();
             }
         }
@@ -50,8 +48,15 @@ namespace Assignment5.Models
                 if (this.QuestionsAnswered < this.GetMaxGames())
                 {
                     Random r = new Random();
+
+                    // Make sure 10 * 10 doesn't appear
                     int a = r.Next(1, 11);
                     int b = r.Next(1, 11);
+                    while (a == 10 && b == 10) 
+                    {
+                        a = r.Next(1, 11);
+                        b = r.Next(1, 11);
+                    }
 
                     this.GetFirstNumberLabel().Content = a;
                     this.GetSecondNumberLabel().Content = b;

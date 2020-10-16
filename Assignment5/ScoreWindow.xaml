@@ -10,7 +10,7 @@
         <ImageBrush ImageSource="/score_wallpaper.jpg" Stretch="UniformToFill"/>
     </Window.Background>
     <Grid>
-        <DataGrid x:Name="data_grid" Margin="138,42,138,42" Background="#BFF0F0F0"/>
+        <DataGrid x:Name="data_grid" Margin="138,42,138,42" Background="#BFF0F0F0" IsReadOnly="True"/>
 
     </Grid>
 </Window>

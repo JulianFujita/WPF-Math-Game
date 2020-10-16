@@ -28,14 +28,12 @@ namespace Assignment5.Models
 
             if (a / b == c)
             {
-                this.CorrectAnswers++;
-                this.GetFeedbackLabel().Content = "Correct!";
+                this.PlayCorrectSound();
                 GenerateQuestion();
             }
             else
             {
-                this.IncorrectAnswers++;
-                this.GetFeedbackLabel().Content = "Incorrect!";
+                this.PlayIncorrectSound();
                 GenerateQuestion();
             }
         }

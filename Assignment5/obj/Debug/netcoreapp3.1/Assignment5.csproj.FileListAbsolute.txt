@@ -21,3 +21,4 @@ C:\Users\lifti\Desktop\Weber State University\Fall 2020\CS 3280\Assignment5\Assi
 C:\Users\lifti\Desktop\Weber State University\Fall 2020\CS 3280\Assignment5\Assignment5\obj\Debug\netcoreapp3.1\Assignment5.csprojAssemblyReference.cache
 C:\Users\lifti\Desktop\Weber State University\Fall 2020\CS 3280\Assignment5\Assignment5\obj\Debug\netcoreapp3.1\ScoreWindow.g.cs
 C:\Users\lifti\Desktop\Weber State University\Fall 2020\CS 3280\Assignment5\Assignment5\obj\Debug\netcoreapp3.1\ScoreWindow.baml
+C:\Users\lifti\Desktop\Weber State University\Fall 2020\CS 3280\Assignment5\Assignment5\obj\Debug\netcoreapp3.1\Assignment5_Content.g.cs

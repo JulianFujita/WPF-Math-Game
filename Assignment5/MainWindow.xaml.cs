@@ -29,6 +29,7 @@ namespace Assignment5
             try
             {
                 InitializeComponent();
+                start_button.Focusable = false;
 
             }
             catch (Exception ex)
@@ -51,7 +52,7 @@ namespace Assignment5
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.ToString());
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -69,7 +70,7 @@ namespace Assignment5
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.ToString());
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -139,7 +140,7 @@ namespace Assignment5
             catch (Exception ex)
             {
 
-                throw new Exception(ex.ToString());
+                MessageBox.Show(ex.ToString(), "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

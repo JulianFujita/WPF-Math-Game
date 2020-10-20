@@ -8,16 +8,36 @@
 
   <ItemGroup>
     <None Remove="general_wallpaper.jpg" />
+    <None Remove="Images\brain_fire.jpg" />
+    <None Remove="Images\general_wallpaper.jpg" />
+    <None Remove="Images\road_wallpaper.jpg" />
+    <None Remove="Images\score_wallpaper.jpg" />
+    <None Remove="Images\spongebob_cafe.jpg" />
+    <None Remove="Images\sponge_not_cheese.jpg" />
     <None Remove="road_wallpaper.jpg" />
     <None Remove="score_wallpaper.jpg" />
+    <None Remove="spongebob_cafe.jpg" />
     <None Remove="sponge_not_cheese.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\brain_fire.jpg" />
+    <Content Include="Images\general_wallpaper.jpg" />
+    <Content Include="Images\road_wallpaper.jpg" />
+    <Content Include="Images\score_wallpaper.jpg" />
+    <Content Include="Images\sponge_not_cheese.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="general_wallpaper.jpg" />
     <Resource Include="road_wallpaper.jpg" />
     <Resource Include="score_wallpaper.jpg" />
+    <Resource Include="spongebob_cafe.jpg" />
     <Resource Include="sponge_not_cheese.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\spongebob_cafe.jpg" />
   </ItemGroup>
 
 </Project>
